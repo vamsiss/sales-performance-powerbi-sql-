@@ -1,4 +1,7 @@
 ### Data Analysis using SQL
+-- Project: Sales Analysis
+-- Author: Sai Tumpati
+-- Description: SQL scripts used for cleaning, joining, and analyzing sales data
 
 SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_ROWS  
 FROM INFORMATION_SCHEMA.TABLES 
