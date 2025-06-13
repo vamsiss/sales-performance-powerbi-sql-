@@ -1,5 +1,9 @@
 ### Data Cleaning & Exploration Using SQL
 
+-- Project: Sales Analysis
+-- Author: Sai Tumpati
+-- Description: SQL scripts used for cleaning, joining, and analyzing sales data
+
 SELECT 
     *
 FROM
@@ -56,8 +60,10 @@ FROM
     sales.date ON transactions.order_date = date.date
 WHERE
     date.year = 2020
-        AND transactions.currency = 'INR'
-        OR transactions.currency = 'USD';
+        AND transactions.currency = 'INR
+'
+        OR transactions.currency = 'USD
+';
 	
 SELECT 
     SUM(transactions.sales_amount)
@@ -68,8 +74,10 @@ FROM
 WHERE
     date.year = 2020
         AND date.month_name = 'January'
-        AND (transactions.currency = 'INR'
-        OR transactions.currency = 'USD');
+        AND (transactions.currency = 'INR
+'
+        OR transactions.currency = 'USD
+');
 
 SELECT 
     SUM(transactions.sales_amount)
